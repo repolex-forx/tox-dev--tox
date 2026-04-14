@@ -1,0 +1,7 @@
+[2026-04-14T10:15:04Z] === AST ITERATION 1 START | repo=tox-dev/tox sha=71ef9bf8 ===
+[2026-04-14T10:15:04Z] [iter=1] PHASE START: ast repo=tox-dev/tox sha=71ef9bf8
+[2026-04-14T10:15:04Z] [iter=1] Building AST aggregate chunks
+[2026-04-14T10:17:17Z] [iter=1] AST chunks built count=1 triples=1756627
+[2026-04-14T10:17:17Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/71ef9bf8257667485badbb92042e2705db4bbf89/.complete
+[2026-04-14T10:17:17Z] [iter=1] PHASE END: ast elapsed_s=133 elapsed_min=2.2
+[2026-04-14T10:17:17Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
