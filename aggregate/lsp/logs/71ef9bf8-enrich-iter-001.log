@@ -1,0 +1,87 @@
+[2026-04-14T10:21:59Z] === ENRICH ITERATION 1 START | repo=tox-dev/tox sha=71ef9bf8 ===
+[2026-04-14T10:22:00Z] [iter=1] PHASE START: enrich repo=tox-dev/tox sha=71ef9bf8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/71ef9bf8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/71ef9bf8257667485badbb92042e2705db4bbf89.nq.gz
+[2026-04-14T10:22:11Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-04-14T10:22:24Z] [iter=1] AST store loaded triples=1756600 load_secs=12 mem_mb=883 MB
+[2026-04-14T10:22:24Z] [iter=1] Step 2: Finding LSP targets mem_mb=883 MB
+[2026-04-14T10:22:26Z] [iter=1] LSP targets found call_sites=10221 imports=1842 extends=133 implements=0 secs=2
+[2026-04-14T10:22:28Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=883 MB
+[2026-04-14T10:22:37Z] [iter=1] Position index built positions=120776 nodes_with_types=158824 secs=10 mem_mb=883 MB
+[2026-04-14T10:22:37Z] [iter=1] Step 3: Starting LSP resolution mem_mb=883 MB already_completed_types=[] already_completed_files=0
+[2026-04-14T10:22:37Z] [iter=1] Resolving target type target_type=call_site count=10221
+[2026-04-14T10:22:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=src/tox/config/of_type.py
+[2026-04-14T10:23:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=3 resolved=55 errors=51 current=tests/config/source/test_toml_tox.py
+[2026-04-14T10:23:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=5 resolved=93 errors=117 current=tests/tox_env/python/virtual_env/package/test_python_package_util.py
+[2026-04-14T10:24:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=7 resolved=162 errors=187 current=src/tox/config/sets.py
+[2026-04-14T10:26:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=9 resolved=227 errors=352 current=tests/execute/local_subprocess/test_local_subprocess.py
+[2026-04-14T10:27:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=10 resolved=322 errors=437 current=tests/tox_env/python/test_python_api.py
+[2026-04-14T10:28:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=11 resolved=348 errors=555 current=src/tox/config/cli/parser.py
+[2026-04-14T10:29:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=12 resolved=414 errors=628 current=tests/tox_env/test_tox_env_runner.py
+[2026-04-14T10:30:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=15 resolved=451 errors=729 current=src/tox/session/cmd/depends.py
+[2026-04-14T10:30:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=20 resolved=555 errors=798 current=src/tox/tox_env/python/pip/req/file.py
+[2026-04-14T10:31:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.8 files_done=21 resolved=620 errors=897 current=tests/docs/test_doc_config_examples.py
+[2026-04-14T10:32:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=22 resolved=668 errors=957 current=tests/tox_env/python/virtual_env/package/test_package_cmd_builder.py
+[2026-04-14T10:33:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=25 resolved=706 errors=1018 current=tests/config/loader/ini/replace/test_replace_glob.py
+[2026-04-14T10:34:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=27 resolved=782 errors=1142 current=src/tox/tox_env/python/dependency_groups.py
+[2026-04-14T10:35:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.1 files_done=29 resolved=855 errors=1216 current=src/tox/config/set_env.py
+[2026-04-14T10:35:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.7 files_done=30 resolved=878 errors=1275 current=src/tox/config/source/toml_pyproject.py
+[2026-04-14T10:36:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.2 files_done=31 resolved=907 errors=1331 current=src/tox/pytest.py
+[2026-04-14T10:37:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.1 files_done=32 resolved=971 errors=1418 current=tests/config/loader/ini/test_factor.py
+[2026-04-14T10:39:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.8 files_done=34 resolved=1042 errors=1683 current=tests/config/test_main.py
+[2026-04-14T10:40:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.6 files_done=35 resolved=1059 errors=1758 current=tests/config/loader/test_toml_product.py
+[2026-04-14T10:41:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.1 files_done=38 resolved=1109 errors=1811 current=tests/pytest_/test_init.py
+[2026-04-14T10:43:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.7 files_done=40 resolved=1187 errors=2065 current=src/tox/config/cli/ini.py
+[2026-04-14T10:45:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.1 files_done=45 resolved=1246 errors=2207 current=tests/session/cmd/test_list_envs.py
+[2026-04-14T10:45:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.8 files_done=47 resolved=1265 errors=2276 current=tests/journal/test_main_journal.py
+[2026-04-14T10:46:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.6 files_done=51 resolved=1333 errors=2357 current=src/tox/provision.py
+[2026-04-14T10:47:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.5 files_done=53 resolved=1369 errors=2442 current=tests/util/test_path.py
+[2026-04-14T10:48:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=58 resolved=1425 errors=2495 current=src/tox/tox_env/api.py
+[2026-04-14T10:49:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=59 resolved=1481 errors=2598 current=tests/tox_env/python/virtual_env/test_subprocess_adapter.py
+[2026-04-14T10:49:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.9 files_done=61 resolved=1495 errors=2684 current=tests/plugin/test_inline.py
+[2026-04-14T10:50:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.9 files_done=64 resolved=1511 errors=2785 current=src/tox/session/cmd/man.py
+[2026-04-14T10:52:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.5 files_done=67 resolved=1590 errors=2934 current=tests/session/cmd/test_exec_.py
+[2026-04-14T10:53:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=70 resolved=1679 errors=3060 current=src/tox/tox_env/python/virtual_env/package/pyproject.py
+[2026-04-14T10:54:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.8 files_done=71 resolved=1749 errors=3167 current=tests/session/cmd/test_show_config_json.py
+[2026-04-14T10:55:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.6 files_done=72 resolved=1761 errors=3241 current=tests/config/source/test_setup_cfg.py
+[2026-04-14T10:56:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.5 files_done=77 resolved=1807 errors=3337 current=src/tox/config/loader/toml/_replace.py
+[2026-04-14T10:57:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=78 resolved=1866 errors=3415 current=src/tox/tox_env/python/pip/pip_install.py
+[2026-04-14T10:58:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.1 files_done=79 resolved=1934 errors=3492 current=tests/session/cmd/test_show_config.py
+[2026-04-14T10:59:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.2 files_done=80 resolved=1955 errors=3598 current=tests/config/test_set_env.py
+[2026-04-14T10:59:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.9 files_done=81 resolved=1966 errors=3673 current=src/tox/config/loader/str_convert.py
+[2026-04-14T11:00:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.5 files_done=85 resolved=2002 errors=3726 current=src/tox/config/loader/toml/_product.py
+[2026-04-14T11:00:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.0 files_done=88 resolved=2081 errors=3779 current=src/tox/tox_env/runner.py
+[2026-04-14T11:01:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.5 files_done=90 resolved=2120 errors=3834 current=tests/config/cli/test_cli_ini.py
+[2026-04-14T11:02:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.2 files_done=93 resolved=2156 errors=3897 current=tests/config/cli/test_cli_env_var.py
+[2026-04-14T11:02:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.7 files_done=98 resolved=2195 errors=3951 current=src/tox/tox_env/python/api.py
+[2026-04-14T11:03:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.3 files_done=99 resolved=2240 errors=4009 current=tests/session/test_env_select.py
+[2026-04-14T11:04:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.2 files_done=100 resolved=2250 errors=4098 current=src/tox/execute/api.py
+[2026-04-14T11:05:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.6 files_done=102 resolved=2290 errors=4235 current=tests/test_run.py
+[2026-04-14T11:06:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.1 files_done=104 resolved=2312 errors=4290 current=src/tox/config/loader/ini/factor.py
+[2026-04-14T11:06:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.7 files_done=107 resolved=2358 errors=4341 current=src/tox/session/cmd/exec_.py
+[2026-04-14T11:07:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.9 files_done=111 resolved=2422 errors=4461 current=tests/config/loader/test_toml_loader.py
+[2026-04-14T11:08:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.4 files_done=115 resolved=2461 errors=4518 current=tests/tox_env/python/test_pylock.py
+[2026-04-14T11:08:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=116 resolved=2481 errors=4569 current=src/tox/tox_env/python/pep723.py
+[2026-04-14T11:09:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.7 files_done=120 resolved=2559 errors=4640 current=tests/config/source/test_source_ini.py
+[2026-04-14T11:10:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.2 files_done=124 resolved=2620 errors=4695 current=src/tox/plugin/manager.py
+[2026-04-14T11:10:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.9 files_done=126 resolved=2661 errors=4758 current=src/tox/session/cmd/devenv.py
+[2026-04-14T11:11:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=132 resolved=2705 errors=4811 current=src/tox/report.py
+[2026-04-14T11:11:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.9 files_done=135 resolved=2731 errors=4861 current=src/tox/tox_env/package.py
+[2026-04-14T11:12:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.5 files_done=138 resolved=2779 errors=4922 current=src/tox/tox_env/python/virtual_env/package/util.py
+[2026-04-14T11:13:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.1 files_done=141 resolved=2833 errors=4981 current=src/tox/config/loader/memory.py
+[2026-04-14T11:13:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=145 resolved=2889 errors=5066 current=src/tox/execute/request.py
+[2026-04-14T11:14:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.6 files_done=154 resolved=2967 errors=5123 current=docs/conf.py
+[2026-04-14T11:15:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.2 files_done=159 resolved=3011 errors=5188 current=tests/plugin/test_plugin_custom_config_set.py
+[2026-04-14T11:15:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.7 files_done=163 resolved=3044 errors=5240 current=tests/config/loader/test_replace.py
+[2026-04-14T11:16:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.4 files_done=169 resolved=3068 errors=5307 current=src/tox/__main__.py
+[2026-04-14T11:16:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.9 files_done=175 resolved=3084 errors=5358 current=tests/config/loader/ini/replace/test_replace_posargs.py
+[2026-04-14T11:17:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.6 files_done=177 resolved=3088 errors=5428 current=tests/config/loader/ini/conftest.py
+[2026-04-14T11:18:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.2 files_done=183 resolved=3113 errors=5481 current=tests/execute/test_stream.py
+[2026-04-14T11:18:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.7 files_done=192 resolved=3126 errors=5534 current=tests/config/cli/test_parse.py
+[2026-04-14T11:19:13Z] [iter=1] Target type resolved target_type=call_site resolved=3180 errors=5583 secs=3395 mem_mb=883 MB
+[2026-04-14T11:19:13Z] [iter=1] Resolving target type target_type=import_statement count=1842
+[2026-04-14T11:19:13Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=57.2 files_done=0 resolved=0 errors=0 current=tests/config/cli/test_cli_ini.py
+[2026-04-14T11:19:21Z] [iter=1] Target type resolved target_type=import_statement resolved=1404 errors=0 secs=8 mem_mb=883 MB
+[2026-04-14T11:19:21Z] [iter=1] Resolving target type target_type=extends_clause count=133
+[2026-04-14T11:19:23Z] [iter=1] Target type resolved target_type=extends_clause resolved=122 errors=0 secs=2 mem_mb=883 MB
+[2026-04-14T11:19:35Z] [iter=1] Step 5: Writing final enrichment file triples=109460
+[2026-04-14T11:19:37Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/71ef9bf8257667485badbb92042e2705db4bbf89.nq.gz size_kb=2464
+[2026-04-14T11:19:37Z] [iter=1] PHASE END: enrich elapsed_s=3457 elapsed_min=57.6 total_triples=109460
